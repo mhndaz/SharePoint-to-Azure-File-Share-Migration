@@ -81,6 +81,8 @@ Each department will have its own dedicated file share to organize data and mana
 | Management | `Management` |
 | General Documents | `Shared` |
 
+<img width="797" height="1016" alt="dgr" src="File Shares.png" />
+
 ### Storage Security
 
 The following security measures will be implemented:
