@@ -116,8 +116,10 @@ This virtual network provides the foundation for the Azure infrastructure and ho
 <img width="797" height="1016" alt="dgr" src="Vnetmhndaz.png" />
 
 ### 3.2 Virtual Network
+To create a Virtual Network Gateway in Azure, you must first ensure you have a dedicated gateway subnet within your existing Virtual Network (VNet)
 
-
+#### here is the Screenshot of the ressource:
+<img width="797" height="1016" alt="dgr" src="VirtualGW.png" />
 ### 3.3 Site-to-Site VPN
 
 I designed a Site-to-Site VPN architecture to connect four physical offices to Azure.
