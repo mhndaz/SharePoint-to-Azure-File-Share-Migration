@@ -32,6 +32,8 @@ The following screenshot shows the Azure resources deployed for this project.
 
 <img width="797" height="1016" alt="dgr" src="AllAzureResources.png" />
 
+### "PLEASE NOT THAT I HAVE REPLACE THE COMPANY NAME WITH MHNDAZ FOR PRIVACY PURPOSES"
+
 ### Azure Resources
 
 | Resource | Resource Name | Purpose |
