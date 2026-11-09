@@ -68,6 +68,8 @@ Azure Files provides a centralized storage platform that can be accessed using t
 
 Each department will have its own dedicated file share to organize data and manage access permissions.
 
+<img width="797" height="1016" alt="dgr" src="Storage Account.pngStorage Account.png" />
+
 ### Proposed Departmental File Shares
 
 | Department | Azure File Share |
