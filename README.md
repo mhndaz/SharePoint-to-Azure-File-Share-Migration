@@ -72,14 +72,9 @@ Each department will have its own dedicated file share to organize data and mana
 
 ### Proposed Departmental File Shares
 
-| Department | Azure File Share |
-|---|---|
-| Human Resources | `HR` |
-| Accounting | `Accounting` |
-| Information Technology | `IT` |
-| Operations | `Operations` |
-| Management | `Management` |
-| General Documents | `Shared` |
+Now we are going to create a file share in the storage account for each departments, in our case here we have 5 and each one needs a specific amount of storage, for the IOPS and Throughput i m using the default values but we can adjust that depending on the needs.
+
+the following is the screenshots of our file shares
 
 <img width="797" height="1016" alt="dgr" src="File Shares.png" />
 
