@@ -74,9 +74,17 @@ Each department will have its own dedicated file share to organize data and mana
 
 Now we are going to create a file share in the storage account for each departments, in our case here we have 5 and each one needs a specific amount of storage, for the IOPS and Throughput i m using the default values but we can adjust that depending on the needs.
 
-the following is the screenshots of our file shares
+The following is the screenshots of our file shares
 
 <img width="797" height="1016" alt="dgr" src="File Shares.png" />
+
+I have here a single file share, it shows detailed settings used here so I used PremiumV2_ZRS for redundancy
+
+here is the settings i used
+
+
+##Next from here
+
 
 ### Storage Security
 
@@ -110,7 +118,10 @@ This virtual network provides the foundation for the Azure infrastructure and ho
 
 <img width="797" height="1016" alt="dgr" src="Vnetmhndaz.png" />
 
-### 3.2 Site-to-Site VPN
+### 3.2 Virtual Network
+
+
+### 3.3 Site-to-Site VPN
 
 I designed a Site-to-Site VPN architecture to connect four physical offices to Azure.
 
@@ -127,7 +138,7 @@ The Site-to-Site VPN tunnels provide encrypted communication between the office 
 
 Employees connected to their office networks will be able to access centralized Azure file shares without requiring a separate VPN connection on their individual computers.
 
-### 3.3 Point-to-Site VPN
+### 3.4 Point-to-Site VPN
 
 In addition to the Site-to-Site connections, the project includes a Point-to-Site VPN solution.
 
@@ -142,7 +153,7 @@ Examples include:
 
 The Point-to-Site VPN will use certificate-based or Microsoft Entra ID authentication, depending on the selected VPN configuration.
 
-### 3.4 Private Endpoint
+### 3.5 Private Endpoint
 
 I created a Private Endpoint named:
 
@@ -158,7 +169,7 @@ The associated network interface is:
 
 Public network access should be restricted after private connectivity has been tested.
 
-### 3.5 Private DNS
+### 3.6 Private DNS
 
 I created the Private DNS Zone:
 
