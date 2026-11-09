@@ -1,4 +1,3 @@
-
 # SharePoint to Azure Files Migration – Multi-Office Infrastructure
 
 ## Introduction
@@ -37,27 +36,27 @@ The following screenshot shows the Azure resources deployed for this project.
 
 | Resource | Resource Name | Purpose |
 |---|---|---|
-| Virtual Network | VNET_MAMNJ | Central Azure network |
-| Virtual Network Gateway | Virtual_Network_Gateway_MAMNJ | VPN connectivity |
-| VPN Connection | S2S_1500 | Office 1500 connection |
-| VPN Connection | S2S_1550 | Office 1550 connection |
-| VPN Connection | S2S_1700 | Office 1700 connection |
-| VPN Connection | S2S_800 | Office 800 connection |
-| Public IP | IP_MAMNJ | VPN Gateway public IP |
-| Storage Account | mamnjdata | Centralized file storage |
-| Private Endpoint | PE_MAMNJ | Private storage connectivity |
-| Network Interface | PE_MAMNJ-nic | Private Endpoint interface |
-| Private DNS Zone | privatelink.file.core.windows.net | Private DNS resolution |
-| DNS Private Resolver | MAMNJ_dns_Resolver | DNS forwarding and resolution |
-| Recovery Services Vault | vault-mr2gau4a | Backup and recovery |
-| Log Analytics Workspace | mamnj-logs-workspace | Centralized logging |
-| Service Health Alert | Azure Service Health Alerts | Azure service notifications |
+| Virtual Network | `VNET_MHNDAZ` | Central Azure network |
+| Virtual Network Gateway | `Virtual_Network_Gateway_MHNDAZ` | VPN connectivity |
+| VPN Connection | `S2S_1500` | Office 1500 connection |
+| VPN Connection | `S2S_1550` | Office 1550 connection |
+| VPN Connection | `S2S_1700` | Office 1700 connection |
+| VPN Connection | `S2S_800` | Office 800 connection |
+| Public IP | `IP_MHNDAZ` | VPN Gateway public IP |
+| Storage Account | `mhndazdata` | Centralized file storage |
+| Private Endpoint | `PE_MHNDAZ` | Private storage connectivity |
+| Network Interface | `PE_MHNDAZ-nic` | Private Endpoint interface |
+| Private DNS Zone | `privatelink.file.core.windows.net` | Private DNS resolution |
+| DNS Private Resolver | `MHNDAZ_dns_Resolver` | DNS forwarding and resolution |
+| Recovery Services Vault | `vault-mr2gau4a` | Backup and recovery |
+| Log Analytics Workspace | `mhndaz-logs-workspace` | Centralized logging |
+| Service Health Alert | `Azure Service Health Alerts` | Azure service notifications |
 
 ---
 
 ## 2. Azure Storage Account and File Shares
 
-I created an Azure Storage Account named `mamnjdata` to host the organization's departmental file shares.
+I created an Azure Storage Account named `mhndazdata` to host the organization's departmental file shares.
 
 Azure Files provides a centralized storage platform that can be accessed using the SMB protocol.
 
@@ -67,12 +66,12 @@ Each department will have its own dedicated file share to organize data and mana
 
 | Department | Azure File Share |
 |---|---|
-| Human Resources | HR |
-| Accounting | Accounting |
-| Information Technology | IT |
-| Operations | Operations |
-| Management | Management |
-| General Documents | Shared |
+| Human Resources | `HR` |
+| Accounting | `Accounting` |
+| Information Technology | `IT` |
+| Operations | `Operations` |
+| Management | `Management` |
+| General Documents | `Shared` |
 
 ### Storage Security
 
@@ -98,7 +97,7 @@ Networking is one of the most important components of this project because emplo
 
 I created a central Azure Virtual Network named:
 
-`VNET_MAMNJ`
+`VNET_MHNDAZ`
 
 This virtual network provides the foundation for the Azure infrastructure and hosts the networking components required for private connectivity.
 
@@ -108,10 +107,10 @@ I designed a Site-to-Site VPN architecture to connect four physical offices to A
 
 | Office | VPN Connection |
 |---|---|
-| Office 1500 | S2S_1500 |
-| Office 1550 | S2S_1550 |
-| Office 800 | S2S_800 |
-| Office 1700 | S2S_1700 |
+| Office 1500 | `S2S_1500` |
+| Office 1550 | `S2S_1550` |
+| Office 800 | `S2S_800` |
+| Office 1700 | `S2S_1700` |
 
 Each office requires a VPN-capable firewall or router with a public IP address and its own local network configuration.
 
@@ -138,7 +137,7 @@ The Point-to-Site VPN will use certificate-based or Microsoft Entra ID authentic
 
 I created a Private Endpoint named:
 
-`PE_MAMNJ`
+`PE_MHNDAZ`
 
 The Private Endpoint provides private connectivity between the Azure Virtual Network and the Azure Storage Account.
 
@@ -146,7 +145,7 @@ This allows Azure Files traffic to use a private IP address instead of relying o
 
 The associated network interface is:
 
-`PE_MAMNJ-nic`
+`PE_MHNDAZ-nic`
 
 Public network access should be restricted after private connectivity has been tested.
 
@@ -160,7 +159,7 @@ This zone allows internal clients to resolve the Azure Files endpoint to its pri
 
 The DNS Private Resolver resource:
 
-`MAMNJ_dns_Resolver`
+`MHNDAZ_dns_Resolver`
 
 supports DNS resolution and forwarding between the office networks and Azure.
 
@@ -191,7 +190,7 @@ Before starting the migration, I will identify:
 
 #### Step 2 – Prepare Azure File Shares
 
-Create the departmental file shares inside the `mamnjdata` Storage Account.
+Create the departmental file shares inside the `mhndazdata` Storage Account.
 
 Create the folder structure to match the existing departmental organization.
 
@@ -282,7 +281,7 @@ Backup jobs will be monitored to ensure failures are identified and resolved.
 
 To monitor the Azure environment, I created a Log Analytics Workspace:
 
-`mamnj-logs-workspace`
+`mhndaz-logs-workspace`
 
 This workspace will provide centralized logging and monitoring for supported Azure resources.
 
