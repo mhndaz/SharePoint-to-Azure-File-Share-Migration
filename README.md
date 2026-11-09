@@ -30,7 +30,7 @@ The objective is to provide employees with reliable access to company files whil
 
 The following screenshot shows the Azure resources deployed for this project.
 
-![Azure Infrastructure](./images/AllAzureResources.png)
+<img width="797" height="1016" alt="dgr" src="AllAzureResources.png" />
 
 ### Azure Resources
 
