@@ -80,7 +80,6 @@ The following is the screenshots of our file shares
 
 I have here a single file share, it shows detailed settings used here so I used PremiumV2_ZRS for redundancy
 
-here is the settings i used
 
 <img width="797" height="1016" alt="dgr" src="SingleFileShare.png" />
 
