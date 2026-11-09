@@ -106,6 +106,10 @@ I created a central Azure Virtual Network named:
 
 This virtual network provides the foundation for the Azure infrastructure and hosts the networking components required for private connectivity.
 
+#### here is the Screenshot of the ressource:
+
+<img width="797" height="1016" alt="dgr" src="Vnetmhndaz.png" />
+
 ### 3.2 Site-to-Site VPN
 
 I designed a Site-to-Site VPN architecture to connect four physical offices to Azure.
