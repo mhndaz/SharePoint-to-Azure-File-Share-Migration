@@ -44,6 +44,10 @@ The following screenshot shows the Azure resources deployed for this project.
 | VPN Connection | `S2S_1550` | Office 1550 connection |
 | VPN Connection | `S2S_1700` | Office 1700 connection |
 | VPN Connection | `S2S_800` | Office 800 connection |
+| Local network gateway | `1500_Office` | Represents the on-premises network |
+| Local network gateway | `1550_Office` | Represents the on-premises network |
+| Local network gateway | `800_Office` | Represents the on-premises network |
+| Local network gateway | `1700_Office` | Represents the on-premises network |
 | Public IP | `IP_MHNDAZ` | VPN Gateway public IP |
 | Storage Account | `mhndazdata` | Centralized file storage |
 | Private Endpoint | `PE_MHNDAZ` | Private storage connectivity |
