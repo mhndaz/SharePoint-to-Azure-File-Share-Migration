@@ -82,9 +82,7 @@ I have here a single file share, it shows detailed settings used here so I used 
 
 here is the settings i used
 
-
-##Next from here
-
+<img width="797" height="1016" alt="dgr" src="SingleFileShare.png" />
 
 ### Storage Security
 
