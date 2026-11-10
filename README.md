@@ -234,6 +234,8 @@ I created an Azure Recovery Services Vault named:
 
 `vault-mr2gau4a`
 
+<img width="797" height="1016" alt="dgr" src="Logs.png" />
+
 The vault will be used to protect the Azure File Shares through Azure Backup.
 
 ### Backup Schedule
@@ -242,10 +244,10 @@ The backup design calls for four backups per day.
 
 | Backup | Scheduled Time |
 |---|---|
-| Backup 1 | 12:00 AM |
-| Backup 2 | 6:00 AM |
-| Backup 3 | 12:00 PM |
-| Backup 4 | 6:00 PM |
+| Backup 1 | 7:00 AM |
+| Backup 2 | 11:00 AM |
+| Backup 3 | 3:00 PM |
+| Backup 4 | 7:00 PM |
 
 The actual backup schedule and retention settings will be configured using a supported Azure Backup policy.
 
