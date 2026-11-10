@@ -158,7 +158,7 @@ Examples include:
 - Employees traveling between offices.
 - IT administrators performing remote maintenance.
 
-The Point-to-Site VPN will use certificate-based or Microsoft Entra ID authentication, depending on the selected VPN configuration.
+The Point-to-Site VPN will use certificate-based or Microsoft Entra ID authentication.
 
 ### 3.5 Private Endpoint
 
@@ -175,6 +175,9 @@ The associated network interface is:
 `PE_MHNDAZ-nic`
 
 Public network access should be restricted after private connectivity has been tested.
+
+<img width="797" height="1016" alt="dgr" src="PE.png" />
+
 
 ### 3.6 Private DNS
 
