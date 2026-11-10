@@ -143,6 +143,11 @@ Here is my configuration, you can see that the status of the s2s is connected an
 
 <img width="797" height="1016" alt="dgr" src="1500S2S.png" />
 
+For each office i created a Local Network Gateway as a logical Azure resource that represents your on-premises network and firewall to the Azure Virtual Network Gateway
+Here is the 1500 Office set up
+
+<img width="797" height="1016" alt="dgr" src="1500LNG.png" />
+
 ### 3.4 Point-to-Site VPN
 
 In addition to the Site-to-Site connections, the project includes a Point-to-Site VPN solution.
