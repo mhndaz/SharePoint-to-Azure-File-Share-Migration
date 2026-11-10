@@ -232,9 +232,9 @@ Data protection is another important requirement of this project.
 
 I created an Azure Recovery Services Vault named:
 
-`vault-mr2gau4a`
+`vault-mr2gau4a` inside i create a log analysis workspace, 
 
-<img width="797" height="1016" alt="dgr" src="Logs.png" />
+<img width="797" height="1016" alt="dgr" src="Vault.png" />
 
 The vault will be used to protect the Azure File Shares through Azure Backup.
 
@@ -274,6 +274,8 @@ Backup jobs will be monitored to ensure failures are identified and resolved.
 To monitor the Azure environment, I created a Log Analytics Workspace:
 
 `mhndaz-logs-workspace`
+
+<img width="797" height="1016" alt="dgr" src="Logs.png" />
 
 This workspace will provide centralized logging and monitoring for supported Azure resources.
 
