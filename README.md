@@ -139,7 +139,7 @@ The Site-to-Site VPN tunnels provide encrypted communication between Each office
 
 Employees connected to their office networks will be able to access centralized Azure file shares without requiring a separate VPN connection on their individual computers. 
 
-Here is my configuration
+Here is my configuration, you can see that the status of the s2s is connected and it has data in/out which means the is traffic between azure and the 1500 office
 
 <img width="797" height="1016" alt="dgr" src="1500S2S.png" />
 
