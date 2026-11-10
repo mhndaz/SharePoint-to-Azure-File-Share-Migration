@@ -315,7 +315,7 @@ After creating the policy 2 rules will be created automatically
 
 3- we will need to create an address object 
 
-<img width="797" height="1016" alt="dgr" src="AO.png" />
+<img width="597" height="816" alt="dgr" src="AO.png" />
 
 ---
 
