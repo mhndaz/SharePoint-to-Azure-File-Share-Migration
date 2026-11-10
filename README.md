@@ -115,8 +115,8 @@ This virtual network provides the foundation for the Azure infrastructure and ho
 
 <img width="797" height="1016" alt="dgr" src="Vnetmhndaz.png" />
 
-### 3.2 Virtual Network
-To create a Virtual Network Gateway in Azure, you must first ensure you have a dedicated gateway subnet within your existing Virtual Network (VNet)
+### 3.2 Virtual Network Gateway
+To create a Virtual Network Gateway in Azure, you must first ensure you have a dedicated gateway subnet within your existing Virtual Network (VNet), used to establish secure, private connectivity between an Azure Virtual Network (VNet) and other networks, serving as the foundation for hybrid cloud architectures.
 
 #### here is the Screenshot of the ressource:
 <img width="797" height="1016" alt="dgr" src="VirtualGW.png" />
