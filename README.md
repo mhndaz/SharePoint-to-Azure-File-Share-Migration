@@ -307,7 +307,7 @@ In order for me to connect the azure S2S to my local network i will need to do s
 <img width="797" height="1016" alt="dgr" src="R1.png" />
 
 
-<img width="797" height="1016" alt="dgr" src="R2.png" />
+<img width="797" height="1016" alt="dgr" src="RR2.png" />
 
 ---
 
