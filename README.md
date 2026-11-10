@@ -305,7 +305,7 @@ In order for me to connect the azure S2S to my local network i will need to do s
 After creating the policy 2 rules will be created automatically   
 
 
-2- A Rule
+2- A Routing Rule
 
 <img width="797" height="1016" alt="dgr" src="R1.png" />
 
