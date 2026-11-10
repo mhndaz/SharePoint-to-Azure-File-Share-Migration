@@ -209,21 +209,21 @@ A major part of this project is migrating existing departmental documents from S
 
 The migration will move the organization's existing documents into the appropriate Azure File Shares.
 
-### Migration Process
+#### Migration Process
 
-#### Step 1 – Inventory Existing SharePoint Data
+##### Step 1 – Inventory Existing SharePoint Data
 
-#### Step 2 – Prepare Azure File Shares
+##### Step 2 – Prepare Azure File Shares
 
-#### Step 3 – Export SharePoint Documents
+##### Step 3 – Export SharePoint Documents
 
-#### Step 4 – Transfer Documents to Azure Files
+##### Step 4 – Transfer Documents to Azure Files
 
-#### Step 5 – Reconfigure Permissions
+##### Step 5 – Reconfigure Permissions
 
-#### Step 6 – Validate the Migration
+##### Step 6 – Validate the Migration
 
-#### Step 7 – Final Cutover
+##### Step 7 – Final Cutover
 
 
 ## 5. Backup and Disaster Recovery
