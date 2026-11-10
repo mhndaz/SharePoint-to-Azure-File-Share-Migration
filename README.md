@@ -322,15 +322,12 @@ After creating the policy 2 rules will be created automatically
 
 ## 9. Conclusion
 
-This project demonstrates how an organization can transition from SharePoint-based departmental document storage to a centralized Azure Files solution.
+This project focuses on moving an organization's departmental file storage from SharePoint to Azure Files. The goal is to bring all company files into one centralized location while making them easier to access and manage.
 
-By implementing Azure Storage Accounts, Site-to-Site VPN connections, Point-to-Site VPN access, Private Endpoints, Private DNS, Azure Backup, and centralized monitoring, the organization gains a secure and scalable file storage environment.
+The setup uses Azure Storage Accounts, Site-to-Site (S2S) VPNs, Point-to-Site (P2S) VPN access, Private Endpoints, Private DNS, and Azure Backup to create a secure connection between the company's offices and Azure. It connects four office locations and also allows remote employees to access shared files securely. On the office side, I used a SonicWall firewall to establish and configure the Site-to-Site VPN tunnels between the office networks and Azure, providing secure connectivity for accessing Azure Files.
 
-The solution connects four physical office locations to Azure while also providing remote employees with a secure access method.
+As part of the project, existing documents will be migrated from SharePoint into Azure Files. The original folder structure will be maintained, and permissions will be configured so employees can access the files they need.
 
-The SharePoint migration component will move existing departmental documents into Azure Files while preserving the required folder organization and re-establishing appropriate permissions.
-
-The final result is a centralized cloud-based file storage solution that improves accessibility, simplifies infrastructure management, and provides a foundation for business continuity and disaster recovery.
 
 ---
 
@@ -352,6 +349,7 @@ The final result is a centralized cloud-based file storage solution that improve
 - Azure Monitor
 - Azure Storage Explorer
 - PowerShell
+- SonicWall FireWall
 
 ---
 
@@ -379,3 +377,4 @@ The following items require configuration, validation, or completion:
 - [Azure Private Endpoint](https://learn.microsoft.com/azure/storage/files/storage-files-networking-endpoints)
 - [Azure Files DNS](https://learn.microsoft.com/azure/storage/files/storage-files-networking-dns)
 - [Azure Files Backup](https://learn.microsoft.com/azure/backup/backup-afs)
+- [SonicOS IPSec VPN](https://www.sonicwall.com/support/technical-documentation/docs/sonicos8-ipsec_vpn/Content/ipsec-vpn-tunnel-interface-route-based-add.htm)
