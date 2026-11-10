@@ -148,6 +148,8 @@ Here is the 1500 Office set up
 
 <img width="797" height="1016" alt="dgr" src="LNG.png" />
 
+The IP address here is the static public IP of my SonicWALL firewall, and the address space(s) is the all the VLANS subnets
+
 ### 3.4 Point-to-Site VPN
 
 In addition to the Site-to-Site connections, the project includes a Point-to-Site VPN solution.
