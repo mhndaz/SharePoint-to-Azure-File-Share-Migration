@@ -253,20 +253,6 @@ The actual backup schedule and retention settings will be configured using a sup
 
 The objective is to minimize data loss and provide multiple recovery points throughout the day.
 
-### Recovery Options
-
-In the event of accidental deletion, file corruption, or data loss, administrators will be able to restore protected data using Azure Backup recovery points.
-
-The recovery process will include:
-
-1. Identify the affected file share.
-2. Locate the appropriate recovery point.
-3. Select the required files or folders where supported.
-4. Restore the data.
-5. Verify that the restored files are accessible.
-
-Backup jobs will be monitored to ensure failures are identified and resolved.
-
 ---
 
 ## 6. Monitoring and Logging
@@ -298,27 +284,6 @@ Monitoring and alerting will help reduce downtime and improve troubleshooting.
 
 ---
 
-## 7. Testing and Validation
-
-Before considering the project complete, I will perform the following tests:
-
-| Test | Expected Result |
-|---|---|
-| Office 1500 VPN | Successfully connects to Azure |
-| Office 1550 VPN | Successfully connects to Azure |
-| Office 800 VPN | Successfully connects to Azure |
-| Office 1700 VPN | Successfully connects to Azure |
-| Point-to-Site VPN | Remote users can connect |
-| Private DNS | Resolves storage endpoint to private IP |
-| Private Endpoint | Storage access uses private connectivity |
-| File Share Access | Authorized users can access departmental folders |
-| File Permissions | Unauthorized users are denied access |
-| SharePoint Migration | Documents and folder structures are validated |
-| Azure Backup | Four scheduled recovery points are created daily |
-| Restore Test | Files can be successfully restored |
-| Log Analytics | Relevant logs and diagnostics are available |
-
----
 
 ## 8. Conclusion
 
@@ -350,10 +315,7 @@ The final result is a centralized cloud-based file storage solution that improve
 - Azure Backup
 - Azure Log Analytics
 - Azure Monitor
-- Microsoft SharePoint Online
-- Microsoft Graph API
 - Azure Storage Explorer
-- AzCopy
 - PowerShell
 
 ---
@@ -382,5 +344,3 @@ The following items require configuration, validation, or completion:
 - [Azure Private Endpoint](https://learn.microsoft.com/azure/storage/files/storage-files-networking-endpoints)
 - [Azure Files DNS](https://learn.microsoft.com/azure/storage/files/storage-files-networking-dns)
 - [Azure Files Backup](https://learn.microsoft.com/azure/backup/backup-afs)
-- [Microsoft Graph API](https://learn.microsoft.com/graph/overview)
-- [AzCopy Documentation](https://learn.microsoft.com/azure/storage/common/storage-use-azcopy-v10)
