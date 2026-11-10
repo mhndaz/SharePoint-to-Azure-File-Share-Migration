@@ -1,4 +1,4 @@
-# SharePoint to Azure Files Migration – Multi-Office Infrastructure
+# Azure Files Deployment & Multi-Office Infrastructure Migration
 
 ## Introduction
 
