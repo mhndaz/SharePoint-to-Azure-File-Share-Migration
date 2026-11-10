@@ -173,6 +173,8 @@ I created a Private Endpoint named:
 
 `PE_MHNDAZ`
 
+<img width="797" height="1016" alt="dgr" src="PE.png" />
+
 The Private Endpoint provides private connectivity between the Azure Virtual Network and the Azure Storage Account.
 
 This allows Azure Files traffic to use a private IP address instead of relying on its public endpoint.
@@ -183,7 +185,6 @@ The associated network interface is:
 
 Public network access should be restricted after private connectivity has been tested.
 
-<img width="797" height="1016" alt="dgr" src="PE.png" />
 
 
 ### 3.6 Private DNS
