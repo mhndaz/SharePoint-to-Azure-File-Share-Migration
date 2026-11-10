@@ -292,7 +292,20 @@ Monitoring and alerting will help reduce downtime and improve troubleshooting.
 ---
 
 
-## 8. Conclusion
+## 8. SonicWall Firewall set up
+
+In order for me to connect the azure S2S to my local network i will need to do some setup in my firewall, in our case here we will need 
+1- a VPN Policy:
+
+<img width="797" height="1016" alt="dgr" src="VPNP1.png" />
+
+
+<img width="797" height="1016" alt="dgr" src="VPNP2.png" />
+
+---
+
+
+## 9. Conclusion
 
 This project demonstrates how an organization can transition from SharePoint-based departmental document storage to a centralized Azure Files solution.
 
