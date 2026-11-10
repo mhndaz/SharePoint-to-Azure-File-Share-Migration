@@ -133,11 +133,15 @@ I designed a Site-to-Site VPN architecture to connect four physical offices to A
 | Office 800 | `S2S_800` |
 | Office 1700 | `S2S_1700` |
 
-Each office requires a VPN-capable firewall or router with a public IP address and its own local network configuration.
+Each office requires a VPN-capable SonicWall firewall  with a Static public IP address and its own local network configuration(it will be in the SonicWall configuration section).
 
-The Site-to-Site VPN tunnels provide encrypted communication between the office networks and Azure.
+The Site-to-Site VPN tunnels provide encrypted communication between Each office networks and Azure.
 
-Employees connected to their office networks will be able to access centralized Azure file shares without requiring a separate VPN connection on their individual computers.
+Employees connected to their office networks will be able to access centralized Azure file shares without requiring a separate VPN connection on their individual computers. 
+
+Here is my configuration
+
+<img width="797" height="1016" alt="dgr" src="1500S2S.png" />
 
 ### 3.4 Point-to-Site VPN
 
