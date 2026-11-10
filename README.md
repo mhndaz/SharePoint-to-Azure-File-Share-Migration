@@ -185,11 +185,15 @@ I created the Private DNS Zone:
 
 `privatelink.file.core.windows.net`
 
+<img width="797" height="1016" alt="dgr" src="PDNS.png" />
+
 This zone allows internal clients to resolve the Azure Files endpoint to its private IP address.
 
 The DNS Private Resolver resource:
 
 `MHNDAZ_dns_Resolver`
+
+<img width="797" height="1016" alt="dgr" src="dnsR.png" />
 
 supports DNS resolution and forwarding between the office networks and Azure.
 
