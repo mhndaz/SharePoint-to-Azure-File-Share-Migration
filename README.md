@@ -211,64 +211,20 @@ The migration will move the organization's existing documents into the appropria
 
 ### Migration Process
 
-#### Step 1 – Inventory Existing SharePoint Data
+## Step 1 – Inventory Existing SharePoint Data
 
-Before starting the migration, I will identify:
+## Step 2 – Prepare Azure File Shares
 
-- Existing SharePoint sites.
-- Document libraries.
-- Departmental folders.
-- File sizes and total storage requirements.
-- Existing user permissions.
-- Files that are no longer required.
+## Step 3 – Export SharePoint Documents
 
-#### Step 2 – Prepare Azure File Shares
+## Step 4 – Transfer Documents to Azure Files
 
-Create the departmental file shares inside the `mhndazdata` Storage Account.
+## Step 5 – Reconfigure Permissions
 
-Create the folder structure to match the existing departmental organization.
+## Step 6 – Validate the Migration
 
-#### Step 3 – Export SharePoint Documents
+## Step 7 – Final Cutover
 
-Export or download the documents from SharePoint Online using an appropriate migration process.
-
-Microsoft Graph API or an approved migration tool can be used to retrieve document library content.
-
-#### Step 4 – Transfer Documents to Azure Files
-
-Transfer the exported documents into their corresponding Azure File Shares.
-
-The following tools can be used:
-
-- Azure Storage Explorer
-- AzCopy
-- PowerShell automation
-- Microsoft Graph API
-
-#### Step 5 – Reconfigure Permissions
-
-SharePoint permissions do not automatically become Azure Files permissions.
-
-After migration, configure the appropriate Azure Files authentication, share-level permissions, and NTFS permissions to ensure that each department has access to its authorized folders.
-
-#### Step 6 – Validate the Migration
-
-Verify that:
-
-- All expected documents have migrated.
-- Folder structures are correct.
-- File sizes and counts match.
-- Users can access their departmental shares.
-- Permissions are working correctly.
-- Files can be opened and modified.
-
-#### Step 7 – Final Cutover
-
-Once the migration has been validated, communicate the transition to employees and make Azure Files the primary location for departmental file storage.
-
-The original SharePoint data should remain available during the validation and rollback period until the migration has been formally approved.
-
----
 
 ## 5. Backup and Disaster Recovery
 
