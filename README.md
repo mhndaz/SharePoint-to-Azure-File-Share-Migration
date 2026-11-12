@@ -32,7 +32,7 @@ The following screenshot shows the Azure resources deployed for this project.
 
 <img width="797" height="1016" alt="dgr" src="assets/images/AllAzureResources.png" />
 
-### "PLEASE NOT THAT I HAVE REPLACE THE COMPANY NAME WITH MHNDAZ FOR PRIVACY PURPOSES"
+### "PLEASE NOTE THAT I HAVE REPLACE THE COMPANY NAME WITH MHNDAZ FOR PRIVACY PURPOSES"
 
 ### Azure Resources
 
@@ -68,7 +68,7 @@ Azure Files provides a centralized storage platform that can be accessed using t
 
 Each department will have its own dedicated file share to organize data and manage access permissions.
 
-<img width="797" height="1016" alt="dgr" src="Storage Account.png" />
+<img width="797" height="1016" alt="dgr" src="assets/images/Storage Account.png" />
 
 ### Proposed Departmental File Shares
 
@@ -76,12 +76,12 @@ Now we are going to create a file share in the storage account for each departme
 
 The following is the screenshots of our file shares
 
-<img width="797" height="1016" alt="dgr" src="File Shares.png" />
+<img width="797" height="1016" alt="dgr" src="assets/images/File Shares.png" />
 
 I have here a single file share, it shows detailed settings used here so I used PremiumV2_ZRS for redundancy
 
 
-<img width="797" height="1016" alt="dgr" src="SingleFileShare.png" />
+<img width="797" height="1016" alt="dgr" src="assets/images/SingleFileShare.png" />
 
 ### Storage Security
 
@@ -113,14 +113,14 @@ This virtual network provides the foundation for the Azure infrastructure and ho
 
 #### here is the Screenshot of the ressource:
 
-<img width="797" height="1016" alt="dgr" src="Vnetmhndaz.png" />
+<img width="797" height="1016" alt="dgr" src="assets/images/Vnetmhndaz.png" />
 
 ### 3.2 Virtual Network Gateway
 To create a Virtual Network Gateway in Azure, you must first ensure you have a dedicated gateway subnet within your existing Virtual Network (VNet), used to establish secure, private connectivity between an Azure Virtual Network (VNet) and other networks, serving as the foundation for hybrid cloud architectures.
 
 Here is the Screenshot of the ressource:
 
-<img width="797" height="1016" alt="dgr" src="VirtualGW.png" />
+<img width="797" height="1016" alt="dgr" src="assets/images/VirtualGW.png" />
 
 ### 3.3 Site-to-Site VPN
 
@@ -141,12 +141,12 @@ Employees connected to their office networks will be able to access centralized 
 
 Here is my configuration, you can see that the status of the s2s is connected and it has data in/out which means the is traffic between azure and the 1500 office
 
-<img width="797" height="1016" alt="dgr" src="1500S2S.png" />
+<img width="797" height="1016" alt="dgr" src="assets/images/1500S2S.png" />
 
 For each office i created a Local Network Gateway as a logical Azure resource that represents your on-premises network and firewall to the Azure Virtual Network Gateway
 Here is the 1500 Office set up
 
-<img width="797" height="1016" alt="dgr" src="LNG.png" />
+<img width="797" height="1016" alt="dgr" src="assets/images/LNG.png" />
 
 The IP address here is the static public IP of my SonicWALL firewall, and the address space(s) is the all the VLANS subnets
 
@@ -154,7 +154,7 @@ The IP address here is the static public IP of my SonicWALL firewall, and the ad
 
 In addition to the Site-to-Site connections, the project includes a Point-to-Site VPN solution.
 
-<img width="797" height="1016" alt="dgr" src="P2S.png" />
+<img width="797" height="1016" alt="dgr" src="assets/images/P2S.png" />
 
 This will allow employees working remotely to connect securely to the Azure Virtual Network.
 
@@ -173,7 +173,7 @@ I created a Private Endpoint named:
 
 `PE_MHNDAZ`
 
-<img width="797" height="1016" alt="dgr" src="PE.png" />
+<img width="797" height="1016" alt="dgr" src="assets/images/PE.png" />
 
 The Private Endpoint provides private connectivity between the Azure Virtual Network and the Azure Storage Account.
 
@@ -193,7 +193,7 @@ I created the Private DNS Zone:
 
 `privatelink.file.core.windows.net`
 
-<img width="797" height="1016" alt="dgr" src="PDNS.png" />
+<img width="797" height="1016" alt="dgr" src="assets/images/PDNS.png" />
 
 This zone allows internal clients to resolve the Azure Files endpoint to its private IP address.
 
@@ -201,7 +201,7 @@ The DNS Private Resolver resource:
 
 `MHNDAZ_dns_Resolver`
 
-<img width="797" height="1016" alt="dgr" src="dnsR.png" />
+<img width="797" height="1016" alt="dgr" src="assets/images/dnsR.png" />
 
 supports DNS resolution and forwarding between the office networks and Azure.
 
@@ -242,7 +242,7 @@ I created an Azure Recovery Services Vault named:
 
 `vault-mr2gau4a` inside i create a log analysis workspace, 
 
-<img width="797" height="1016" alt="dgr" src="Vault.png" />
+<img width="797" height="1016" alt="dgr" src="assets/images/Vault.png" />
 
 The vault will be used to protect the Azure File Shares through Azure Backup.
 
@@ -269,7 +269,7 @@ To monitor the Azure environment, I created a Log Analytics Workspace:
 
 `mhndaz-logs-workspace`
 
-<img width="797" height="1016" alt="dgr" src="Logs.png" />
+<img width="797" height="1016" alt="dgr" src="assets/images/Logs.png" />
 
 This workspace will provide centralized logging and monitoring for supported Azure resources.
 
@@ -298,25 +298,25 @@ Monitoring and alerting will help reduce downtime and improve troubleshooting.
 In order for me to connect the azure S2S to my local network i will need to do some setup in my firewall, in our case here we will need 
 1- a VPN Policy:
 
-<img width="797" height="1016" alt="dgr" src="VPNP1.png" />
+<img width="797" height="1016" alt="dgr" src="assets/images/VPNP1.png" />
 
 
-<img width="797" height="1016" alt="dgr" src="VPNP2.png" />
+<img width="797" height="1016" alt="dgr" src="assets/images/VPNP2.png" />
 
 After creating the policy 2 rules will be created automatically   
 
 
 2- A Routing Rule
 
-<img width="797" height="1016" alt="dgr" src="R1.png" />
+<img width="797" height="1016" alt="dgr" src="assets/images/R1.png" />
 
 
-<img width="797" height="1016" alt="dgr" src="RR2.png" />
+<img width="797" height="1016" alt="dgr" src="assets/images/RR2.png" />
 
 
 3- we will need to create an address object 
 
-<img width="597" height="816" alt="dgr" src="AO.png" />
+<img width="597" height="816" alt="dgr" src="assets/images/AO.png" />
 
 ---
 
